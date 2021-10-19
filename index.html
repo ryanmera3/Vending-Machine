@@ -24,14 +24,62 @@
       </a>
     </nav>
   </header>
-  <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-3" onclick="app.vendController.choice('Mountain-Dew')">
+        <div class="card mt-3">
+          <img class="card-img-top" src="holder.js/100x180/" alt="">
+          <div class="card-body" id="Mountain-Dew">
+            <h4 class="card-title">Mtn. Dew</h4>
+            <p class="card-text">Price</p>
+            <p class="card-text">Quantity</p>
+            <button class="btn btn-success">Purchase</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-3" onclick="app.vendController.choice('Doritos')">
+        <div class="card mt-3">
+          <img class="card-img-top" src="holder.js/100x180/" alt="">
+          <div class="card-body" id="Doritos">
+            <h4 class="card-title">Doritos</h4>
+            <p class="card-text">Price</p>
+            <p class="card-text">Quantity</p>
+            <button class="btn btn-success">Purchase</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 " onclick="app.vendController.choice('Root-Beer')">
+        <div class="card mt-3">
+          <img class="card-img-top" src="holder.js/100x180/" alt="">
+          <div class="card-body " id="Root-Beer">
+            <h4 class="card-title">Root Beer</h4>
+            <p class="card-text">Price</p>
+            <p class="card-text">Quantity</p>
+            <button class="btn btn-success">Purchase</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-3" onclick="app.vendController.choice('Reeses')">
+        <div class="card mt-3">
+          <img class="card-img-top" src="holder.js/100x180/" alt="">
+          <div class="card-body" id="Reeses">
+            <h4 class="card-title">Reeses</h4>
+            <p class="card-text">Price</p>
+            <p class="card-text">Quantity</p>
+            <button class="btn btn-success">Purchase</button>
+          </div>
         </div>
       </div>
     </div>
+    <section>
+      <div>
+        <button class="btn btn-success mt-5" onclick="app.vendController.cents()"> + 25 cents</button>
+        <div id="transactionTotal" class="mt-2">
+          <p>Total: </p>
+        </div>
+      </div>
+
+    </section>
   </main>
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
